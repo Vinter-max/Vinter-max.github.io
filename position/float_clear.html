@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+<!--    can be used for page layout-->
+    <style>
+        .left {
+            width: 100px;
+            height: 200px;
+            background-color: cadetblue;
+            float: left;
+            opacity: 0.5;
+        }
+        
+        .right {
+            width: 100px;
+            height: 300px;
+            background-color: bisque;
+            float: right;
+        }
+        
+        p {
+            font-size:1.5rem;
+            border: solid;
+/*            clear: no floating element allowed on side*/
+            clear: left;
+            clear: right;
+            clear: both;
+        }
+    </style>
+    
+</head>
+<body>
+    
+    <div class="left"></div>
+    <div class="right"></div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum sequi fugiat quos reprehenderit error excepturi dolor ut, cumque hic architecto laudantium, at, eligendi doloremque placeat ab, dicta inventore nesciunt illum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, ratione facere pariatur fuga voluptatem est obcaecati. Consequuntur illo tempora eum commodi ex, atque, cupiditate alias. Esse, dolore sed explicabo quae.</p>
+    
+</body>
+</html>

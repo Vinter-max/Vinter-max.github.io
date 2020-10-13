@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        #container {
+            width: 600px;
+            height: 200px;
+            border: solid;
+        }
+    
+        #item {
+            height: 100%;
+            width: 500px;
+            background-color: black;
+            
+/*            max-width overides width when it's smaller than the width*/
+            max-width: 200px;
+            
+/*            min-width overides max-width when it's bigger than max-width*/
+            min-width: 400px;
+        }
+    </style>
+    
+</head>
+<body>
+    
+    <div id="container">
+        <div id="item"></div>
+    </div>
+    
+</body>
+</html>

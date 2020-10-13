@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        #container {
+            width: 600px;
+            height: 300px;
+            border: solid;
+        }
+        
+/*        box model includes: content, padding, border, model*/
+        #left,
+        #right {
+            width: 300px;
+            height: 300px;
+            display: inline-block;
+            font-size: 3rem;
+        }
+        
+        #left {
+            background-color: green;
+            padding: 50px;
+            border: solid 50px;
+/*            box-sizing defines the meaning of the with and height*/
+            box-sizing: border-box;
+/*            defalt value*/
+/*            box-sizing: content-box;*/
+        }
+        
+        #right {
+            background-color: purple;
+            margin-left: -4px;
+        }
+    </style>
+    
+</head>
+<body>
+    
+    <div id="container">
+        <div id="left">left</div>
+        <div id="right">right</div>
+    </div>
+
+    
+    
+</body>
+</html>

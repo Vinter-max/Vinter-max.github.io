@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        html {
+            border: solid px;
+        }
+        
+        
+        .container {
+            height: 500px;
+            width: 400px;
+            border: solid;
+/*            posotion: static*/
+            position: relative;
+        }
+        
+        .item {
+            height: 200px;
+            width: 200px;
+            background-color: black;
+            color: white;
+            font-size: 50px;
+        }
+        
+/*        normal page flow*/
+/*        by default, every element has position static*/
+        .item:first-child {
+            position: relative;
+/*            relative to its orignal position*/
+/*            right: 50px;*/
+            background-color: red;
+            left: 300px;
+/*            bottom: 50px;*/
+        }
+        
+        #abs :nth-child(2) {
+/*            absolute item looks for a non-static container*/
+/*            absolute item relatives to its non-static container*/
+            position: absolute;
+            opacity: 0.5;
+            right: 50px;
+            bottom: 50px;
+            color: gray;
+        }
+        
+        .item:last-child {
+/*            fixed item relatives to viewport*/
+            position: fixed;
+            bottom: 50px;
+            right: 50px;
+        }
+    </style>
+    
+    
+</head>
+<body>
+   
+<!--   relative vs absolute -->
+<!--   relative: relative to its original position, not free space-->
+<!--   absolute: relative tom its non-static container, free space-->
+    
+    <div class="container">
+        <div class="item">relative</div>
+        <div id="abs" class="item">absolute</div>
+        <div class="item">fixed</div>
+    </div>
+    
+</body>
+</html>

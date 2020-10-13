@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        form {
+            border: solid 1px;
+            width: 400px;
+        }
+    
+        input {
+            width: 80%;
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+   <form action="/login" method='post'>
+       <label for='name'>user name</label>
+        <input name='name' type="text">
+        <br>
+        <label>password</label>
+        <input name='password'
+        type="password"><br>
+        <button>Log In</button>
+        <p>Forgot account?</p>
+        <hr>
+        <button>Create New Account</button>
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+        <select name="" id="">
+        <option value="">hot dog</option>
+        <option value="">pizza</option>
+        <option value="">hamburger</option>
+        </select>
+        
+        <input type="text" list="data">
+        <datalist id='data'>
+            <option value="hot dog"></option>
+            <option value="pizza"></option>
+            <option value="hamburger"></option>
+        </datalist>
+        
+        <meter min=1 max=100 value=60></meter>
+        <progress min=1 max=100 value=60></progress>
+        
+        <input type="number"><br>
+        <input type="email">
+        <input type="tel">
+        <input type="url">
+        <input type="range" min=1 max=5 value=2>
+        
+        <input type="color">
+        <input type="file">
+        <input type="search">
+        <input type="date">
+        <input type="time">
+        <input type="week">
+        <input type="month">
+        
+        <input type="radio" name='payment'>Master
+        <input type="radio" name='payment'>Visa
+        <input type="radio" name='payment'>Paypal
+        
+        <input type="checkbox" name='order' value='hot dog'>hot dog
+        <input type="checkbox" name='order' value='pizza'>pizza
+        <input type="checkbox" name='order' value='burger'>burger
+        <input type='url'>
+        
+    </form>
+    
+    
+</body>
+</html>

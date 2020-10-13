@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        div {
+        display: inline-block;
+        font-family: cursive;
+        color: blue;
+        font-size: 20px
+        }
+        
+        div:after {
+            content: "\2022";
+            color: black;
+            margin-left: 3px;
+        }
+        
+        div.last:after {
+            content: '';
+        }
+        
+        main {
+        display: inline-block;
+        font-family: cursive;
+        color: blue;
+        font-size: 20px;
+        }
+        
+    </style>
+    
+    
+</head>
+<body>
+    
+    <div>About</div>
+    <div>Products</div>
+    <div>Services</div>
+    <main>Contact</main>
+    
+</body>
+</html>

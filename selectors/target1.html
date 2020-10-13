@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+/*        target*/
+        
+/*        study (scratch, customize, flexible): low level. use (efficient) high level.  */
+        
+        .tab a {
+            background-color: lightpink;
+            text-decoration: none;
+            font-size: 30px;
+            color: lightgoldenrodyellow;
+            padding: 20px;
+            display: inline-block;
+        }
+    
+        .tab div {
+            display: none;
+        }
+        
+        div:target {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="tab">
+        <a href="#about">About</a>
+        <a href="#product">Product</a>
+    
+    <div id='about'>
+        <h1>About page</h1>
+    </div>
+    <div id='product'>
+        <h1>Product page</h1>
+    </div>
+</div>
+</body>
+</html>

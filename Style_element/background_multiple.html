@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        div {
+            width: 500px;
+            height: 300px;
+            background: url(https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__340.jpg),
+            url(https://images.unsplash.com/photo-1503803548695-c2a7b4a5b875?ixlib=rb-1.2.1&w=1000&q=80);
+                
+            background-repeat: no-repeat;
+            background-size: 50%;
+        }
+        
+        p {
+            width: 500px;
+            height: 300px;
+            background: 
+            url(https://images.unsplash.com/photo-1503803548695-c2a7b4a5b875?ixlib=rb-1.2.1&w=1000&q=80),
+            linear-gradient(to right, lightyellow, lightpink);
+            background-size: cover;
+            
+            background-blend-mode: overlay;
+        }
+        
+        footer {
+            position: relative;
+        }
+        
+        footer img {
+            width: 500px;
+            position: absolute;
+        }
+        
+        footer img:nth-child(2) {
+            mix-blend-mode: overlay;
+        }
+        
+    </style>
+</head>
+<body>
+    
+    <div></div>
+    <p></p>
+    
+    <footer>
+        <img src="url(https://images.unsplash.com/photo-1503803548695-c2a7b4a5b875?ixlib=rb-1.2.1&w=1000&q=80)" alt="">
+        <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__340.jpg" alt="">
+    </footer>
+    
+</body>
+</html>

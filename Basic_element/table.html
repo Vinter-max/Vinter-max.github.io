@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        table{
+            border-color: midnightblue;
+            border-collapse: collapse;
+            font-size: 30px;
+            background-color: #ED6663;
+        }
+        tr:first-child {
+            border: solid;
+        }
+        tr:first-child td{
+            border-right: solid;
+        }
+        td:first-child{
+            width:200px
+        }
+        td:nth-child(2){
+            width:300px
+        }
+        .name {
+            color:#F8BD7F
+        }
+        
+        .phone {
+            color:#F8BD7F
+        }
+    </style>
+</head>
+<body>
+   <!--    organized, fixed -->
+    <table border>
+        <caption><strong>Contacts</strong></caption>
+       <!--    table row -->
+        <tr>
+           <!--    table data -->
+            <th>Name</th>
+            <th>Phone</th>
+        </tr>
+        <tr>
+            <td class='name'>Andi</td>
+            <td class='phone'>226-9930458</td>
+        </tr>
+        <tr>
+            <td class='name'>Makena</td>
+            <td class='phone'>519-7631512</td>
+        </tr>
+        <tr>
+            <td class='name'>Jessica</td>
+            <td class='phone'>226-5365327</td>
+        </tr>
+    </table>
+    
+    <!--    table>tr*4>td*2 -->
+</body>
+</html>

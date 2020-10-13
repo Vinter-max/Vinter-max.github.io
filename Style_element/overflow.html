@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    
+    <style>
+        body:hover P{
+            background-color: darkred;
+        }
+        
+        ::-webkit-scrollbar {
+            width: 12px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            border-radius: 10px;
+            background-color: lightskyblue;
+            -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+        }
+
+
+        #container {
+            border:solid;
+            width: 600px;
+            height: 600px;
+            font-size: 15rem;
+            overflow: visible;
+            overflow: hidden;
+            overflow: scroll;
+            overflow: auto;
+        }
+        
+        p {
+            width: 800px;
+            background-color: orange;
+        }
+    
+    </style>
+    
+</head>
+<body>
+    
+    <div id="container">
+        <p>0 1 2 3 4 5 6 7 8 9</p>
+    </div>
+    
+</body>
+</html>

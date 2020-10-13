@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+/*        external style(link) vs embeded style*/
+        ul {
+            font-size: 4rem;
+        }
+    
+/*        class take higher priority, id higher than class*/
+           
+/*        long selector--(combined selector)*/
+        ul #first {
+            background-color: lightpink !important;
+        }
+        
+        
+        #first {
+            background-color: indianred !important;
+        }
+        
+        
+        [data='tennis'] {
+            background-color: deeppink;
+        }
+        
+        .first {
+            background-color: deepskyblue;
+        }
+        
+        li {
+            background-color: lightgoldenrodyellow;
+        }
+        
+        
+    </style>
+</head>
+<body>
+<!--    specificity-->
+
+<!--    important > inline-style > id > class = attr > tag-->  
+    
+<!--    long selector > short selector-->
+    
+<!--    inline style is good for debugging-->
+   
+<!--   -->
+   
+   
+    <ul>
+        <li id='first' class='first' data='tennis' style='background-color: forestgreen'>Tennis</li>
+        <li>Hiking</li>
+        <li>Talk with friends</li>
+    </ul>
+    
+</body>
+</html>
