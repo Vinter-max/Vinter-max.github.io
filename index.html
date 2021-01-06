@@ -1,216 +1,286 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Document</title>
-    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            list-style: none;
-            font-family: 'Open Sans', sans-serif;
-        }
-        
-        body {
-            background: linear-gradient(to right, #ff5733, #c70039);
-        }
-        
-        .resume {
-            width: 800px;
-            background: #fff;
-            margin: 25px auto;
-            display: flex;
-        }
-        
-        .left {
-            background-color: #292b2f;
-            width: 250px;
-            padding: 0px 20px;
-        }
-        
-        .right {
-            width: calc(100% - 250px);
-        }
-        
-        .left .img_holder {
-            text-align: center;
-            padding: 20px 0;
-        }
-        
-        .left .img_holder img{
-            width: 200px;
-            border-radius: 30px;
-        }
-        
-        .pb {
-            padding-bottom: 20px;
-        }
-        
-        .title {
-            font-size: 24px;
-            font-weight: bold;
-            text-transform: uppercase;
-            letter-spacing: 3px;
-            padding-bottom: 10px;
-            color: #fff;
-            position: relative;
-            text-align: right;
-            margin-bottom: 15px;
-        }
-        
-        .title:before {
-            content: "";
-            position: absolute;
-            top: 35px;
-            right: 0;
-            width: 50px;
-            height: 3px;
-            background: #fff;
-        }
-        
-        .left .icon {
-            font-size: 20px;
-            color: #fff;
-        }
-        
-        .left .text {
-            color: #fff;
-            font-size: 13px;
-        }
-        
-        .contact .li_wrap {
-            display: flex;
-            align-items: center;
-            width: 100%;
-            margin-bottom: 15px;
-        }
-        
-        .contact .li_wrap .icon {
-            width: 50px;
-            height: 50px;
-            border-radius: 15px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-right: 15px;
-        }
-        
-        .contact .li_wrap .text {
-            width: calc(100% - 50px);
-            word-break: break-word;
-        }
-        
-        .skills ul,
-        .hobbies ul {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-        }
-        
-        .skills .li_wrap,
-        .hobbies .li_wrap {
-            width: 100px;
-            height: 100px;
-            margin-bottom: 15px;
-            border-radius: 15px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-        }
-        
-        .skills .li_wrap {
-            background: #ff5733;
-        }
-        
-        .skills .li_wrap .text,
-        .hobbies .li_wrap .text {
-            margin-top: 5px;
-        }
-        
-        .hobbies .li_wrap {
-            border: 2px solid #ff5733;
-        }
-    
-        .header {
-            background: #292b2f;
-            padding: 15px 30px;
-            color: #fff;
-        }
-        
-        .header .name {
-            font-size: 52px;
-            font-weight: bold;
-            color: #ff5733;
-        }
-        
-        .header .role {
-            font-weight: bold;
-            font-size: 20px;
-        }
-        
-        .header .about {
-            margin-top: 20px;
-            line-height: 26px;
-        }
-        
-        
+	<meta charset="UTF-8">
+	<title>Resume CV Design</title>
+	<link rel="stylesheet" href="styles.css">
+	<script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+	<style>
+        *{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	box-sizing: border-box;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+body{
+	background: linear-gradient(to right, #ff5733, #c70039);
+}
+
+.resume{
+	width: 800px;
+	background: #fff;
+	margin: 25px auto;
+	display: flex;
+}
+
+.left{
+	background: #292b2f;
+	width: 250px;
+	padding: 0 20px;
+}
+
+.right{
+	width: calc(100% - 250px);
+}
+
+.left .img_holder{
+	text-align: center;
+	padding: 20px 0;
+}
+
+.left .img_holder img{
+	width: 200px;
+	border-radius: 30px;
+}
+
+.pb{
+	padding-bottom: 20px;
+}
+
+.title{
+	font-size: 24px;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	padding-bottom: 10px;
+	color: #ff5733;
+	position: relative;
+	text-align: right;
+	margin-bottom: 15px;
+}
+
+.title:before{
+	content: "";
+	position: absolute;
+	top: 35px;
+	right: 0;
+	width: 50px;
+	height: 3px;
+	background: #ff5733;
+}
+
+.left .icon{
+	font-size: 20px;
+	color: #ff5733;
+}
+
+.left .text{
+	color: #ff5733;
+
+	font-size: 13px;
+}
+
+.contact .li_wrap{
+	display: flex;
+	align-items: center;
+	width: 100%;
+	margin-bottom: 15px;
+}
+
+.contact .li_wrap .icon{
+	width: 50px;
+	height: 50px;
+	background: #fff;
+	border-radius: 15px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-right: 15px;
+}
+
+.contact .li_wrap .text{
+	width: calc(100% - 50px);
+	word-break: break-word;
+	color: #fff;
+}
+
+.skills ul,
+.hobbies ul{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.skills .li_wrap,
+.hobbies .li_wrap{
+	width: 100px;
+	height: 100px;
+	margin-bottom: 15px;
+	border-radius: 15px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.skills .li_wrap{
+	background: #fff;
+}
+
+.skills .li_wrap .text,
+.hobbies .li_wrap .text{
+	margin-top: 5px;
+}
+
+.hobbies .li_wrap{
+	border: 2px solid #fff;
+}
+
+.hobbies .li_wrap .icon,
+.hobbies .li_wrap .text{
+	color: #fff;
+}
+
+.hobbies .li_wrap:hover{
+	background: #fff;
+}
+
+.hobbies .li_wrap:hover .icon,
+.hobbies .li_wrap:hover .text{
+	color: #ff5733;
+}
+
+.header{
+	background: #292b2f;
+	padding: 15px 30px;
+	color: #ff5733;
+	height: 240px;
+}
+
+.header .name{
+	font-size: 52px;
+	font-weight: 700;
+	color: #ff5733;
+}
+
+.header .role{
+	font-weight: 300;
+	font-size: 20px;
+}
+
+.header .about{
+	margin-top: 20px;
+	line-height: 26px;
+}
+
+.right_inner{
+	padding: 30px;
+	color: #ff5733;
+}
+
+.right_inner .education{
+	margin-top: 30px;
+}
+
+.right_inner .li_wrap{
+	display: flex;
+	margin-bottom: 15px;
+}
+
+.right_inner .li_wrap .date {
+    width: 125px;
+    color: #ff5733;
+}
+
+.right_inner .li_wrap .info{
+	width: calc(100%  - 125px);
+	padding-left: 25px;
+	position: relative;
+}
+
+.right_inner .li_wrap .info_title{
+	text-transform: uppercase;
+	font-weight: 700;
+	letter-spacing: 2px;
+	color: #ff5733;
+}
+
+.right_inner .li_wrap .info_com{
+	font-weight: 300;
+	font-size: 14px;
+	margin-top: 3px;
+}
+
+.right_inner .li_wrap .info_cont{
+	margin-top: 15px;
+}
+
+.right_inner .li_wrap .info:before{
+	content: "";
+	position: absolute;
+	top: 3px;
+	left: 0;
+	width: 10px;
+	height: 10px;
+	background: #ff5733;
+	border-radius: 50%;
+}
+
+.right_inner .li_wrap .info:after{
+	content: "";
+	position: absolute;
+	top: 10px;
+	left: 4px;
+	width: 2px;
+	height: 90%;
+	background: #ff5733
+}
     </style>
+    
 </head>
 <body>
-    
-<div class="wrapper">
-    <div class="resume">
-        <div class="left">
-            <div class="img_holder">
-                <img src="https://cdn.business2community.com/wp-content/uploads/2017/08/blank-profile-picture-973460_640.png" alt="picture">
-            </div>
-            <div class="contact_wrap pb">
-                <div class="title">
-                    Contact
-                </div>
-                <div class="contact">
-                    <ul>
-                        <li>
-                            <div class="li_wrap">
-                                <div class="icon">
-                                    <i class="fas fa-mobile-alt"></i>
-                                </div>
-                                <div class="text">519 764 7241</div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="li_wrap">
-                                <div class="icon">
-                                    <i class="fas fa-envelope"></i>
-                                </div>
-                                <div class="text">vintersun103@gmail.com</div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="li_wrap">
-                                <div class="icon">
-                                    <i class="fab fa-weebly"></i>
-                                </div>
-                                <div class="text">vinter-max.github.io</div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="li_wrap">
-                                <div class="icon">
-                                    <i class="fas fa-map-signs"></i>
-                                </div>
-                                <div class="text">43 Jennifer Gardens, London, Ontario</div>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            
-           <div class="skills_wrap pb">
+	<div class="wrapper">
+		<div class="resume">
+			<div class="left">
+				<div class="img_holder">
+					<img src="https://i.dlpng.com/static/png/6542357_preview.png" alt="picture">
+				</div>
+				<div class="contact_wrap pb">
+					<div class="title">
+						Contact
+					</div>
+					<div class="contact">
+						<ul>
+							<li>
+								<div class="li_wrap">
+									<div class="icon"><i class="fas fa-mobile-alt" aria-hidden="true"></i></div>
+									<div class="text">519 764 7241</div>
+								</div>
+							</li>
+							<li>
+								<div class="li_wrap">
+									<div class="icon"><i class="fas fa-envelope" aria-hidden="true"></i></div>
+									<div class="text">vintersun103@gmail.com</div>
+								</div>
+							</li>
+							<li>
+								<div class="li_wrap">
+									<div class="icon"><i class="fab fa-weebly" aria-hidden="true"></i></div>
+									<div class="text">vinter-max.github.io</div>
+								</div>
+							</li>
+							<li>
+								<div class="li_wrap">
+									<div class="icon"><i class="fas fa-map-signs" aria-hidden="true"></i></div>
+									<div class="text">43 Jennifer Gardens, London, Ontario</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="skills_wrap pb">
 					<div class="title">
 						Skills
 					</div>
@@ -218,103 +288,209 @@
 						<ul>
 							<li>
 								<div class="li_wrap">
-								    <div class="icon">
-								        <i class="fas fa-ruler-horizontal"></i>
-								    </div>
-									<div class="text">Piano</div>
+									<div class="icon"><i class="fab fa-html5"></i></div>
+									<div class="text">HTML</div>
 								</div>
 							</li>
 							<li>
 								<div class="li_wrap">
-								    <div class="icon">
-								        <i class="fas fa-music"></i>
-								    </div>
-									<div class="text">Theory</div>
+									<div class="icon"><i class="fab fa-css3-alt"></i></div>
+									<div class="text">CSS</div>
 								</div>
 							</li>
 							<li>
 								<div class="li_wrap">
-								    <div class="icon">
-								        <i class="fas fa-bullhorn"></i>
-								    </div>
+									<div class="icon"><i class="fas fa-bullhorn"></i></div>
 									<div class="text">Trumpet</div>
 								</div>
 							</li>
 							<li>
 								<div class="li_wrap">
-								    <div class="icon">
-								        <i class="fab fa-html5"></i>
-								    </div>
-									<div class="text">HTML</div>
+									<div class="icon"><i class="fab fa-react"></i></div>
+									<div class="text">Science</div>
 								</div>
 							</li>
 						</ul>
 					</div>
 				</div>
-           
-                <div class="Hobbies_wrap pb">
+				<div class="hobbies_wrap pb">
 					<div class="title">
-						Hobbies
+						hobbies
 					</div>
-					<div class="skills">
+					<div class="hobbies">
 						<ul>
 							<li>
 								<div class="li_wrap">
-								    <div class="icon">
-								        <i class="fas fa-book"></i>
-								    </div>
+									<div class="icon"><i class="fas fa-book"></i></div>
 									<div class="text">Reading</div>
 								</div>
 							</li>
 							<li>
 								<div class="li_wrap">
-								    <div class="icon">
-								        <i class="fas fa-headphones"></i>
-								    </div>
+									<div class="icon"><i class="fas fa-music"></i></div>
 									<div class="text">Music</div>
 								</div>
 							</li>
 							<li>
 								<div class="li_wrap">
-								    <div class="icon">
-								        <i class="fas fa-gamepad"></i>
-								    </div>
+									<div class="icon"><i class="fas fa-gamepad"></i></div>
 									<div class="text">Gaming</div>
 								</div>
 							</li>
 							<li>
 								<div class="li_wrap">
-								    <div class="icon">
-								        <i class="fas fa-tree"></i>
-								    </div>
+									<div class="icon"><i class="fas fa-tree"></i></div>
 									<div class="text">Travelling</div>
 								</div>
 							</li>
 						</ul>
 					</div>
-                </div>
-           
-     </div>
-        <div class="right">
-            <div class="header">
-                <div class="name_role">
-                    <div class="name">
-                        Vinter Sun
-                    </div>
-                    <div class="role">
-                        High School Student
-                    </div>
-                </div>
-                <div class="about">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus est, tempora quaerat officia fuga eligendi, dolor aliquid obcaecati, repellat deserunt, recusandae saepe nemo atque voluptatem. Error nihil cumque optio similique.
-                </div>
-            </div>
-            <div class="right_inner">
-                <div class="exp"></div>
-            </div>
-        </div>
-    </div>
-</div>
-    
+				</div>
+			</div>
+			<div class="right">
+				<div class="header">
+					<div class="name_role">
+						<div class="name">
+							Vinter sun
+						</div>
+						<div class="role">
+							Secondary School Student
+						</div>
+					</div>
+					<div class="about">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente dicta beatae optio, corporis fugit accusantium debitis laborum tenetur, quisquam distinctio nihil quam eum. Laudantium saepe, sunt, esse laboriosam dolores distinctio?
+					</div>
+				</div>
+				<div class="right_inner">
+					<div class="exp">
+						<div class="title">
+							experience
+						</div>
+						<div class="exp_wrap">
+							<ul>
+								<li>
+									<div class="li_wrap">
+										<div class="date">
+											2018 - Present
+										</div>
+										<div class="info">
+											<p class="info_title">
+												Lifegard
+											</p>
+											<p class="info_com">
+												Bronze Cross
+											</p>
+											<p class="info_cont">
+												Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga voluptatibus consequatur rem nostrum omnis! Architecto.
+											</p>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="li_wrap">
+										<div class="date">
+											2019 - 2020
+										</div>
+										<div class="info">
+											<p class="info_title">
+												Volunteer
+											</p>
+											<p class="info_com">
+												Leadership in traning programme
+											</p>
+											<p class="info_cont">
+												Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga voluptatibus consequatur rem nostrum omnis! Architecto.
+											</p>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="li_wrap">
+										<div class="date">
+											2014 - 2015
+										</div>
+										<div class="info">
+											<p class="info_title">
+												HTML bootcamp
+											</p>
+											<p class="info_com">
+												Coding language
+											</p>
+											<p class="info_cont">
+												Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga voluptatibus consequatur rem nostrum omnis! Architecto.
+											</p>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="education">
+						<div class="title">
+							Education
+						</div>
+						<div class="education_wrap">
+							<ul>
+								<li>
+									<div class="li_wrap">
+										<div class="date">
+											2010 - 2014
+										</div>
+										<div class="info">
+											<p class="info_title">
+								                Preschool
+											</p>
+											<p class="info_com">
+												Preschool 
+											</p>
+											<p class="info_cont">
+												Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga voluptatibus consequatur rem nostrum omnis! Architecto.
+											</p>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="li_wrap">
+										<div class="date">
+											2015-2017
+										</div>
+										<div class="info">
+											<p class="info_title">
+												Primary
+											</p>
+											<p class="info_com">
+												primary school
+											</p>
+											<p class="info_cont">
+												Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga voluptatibus consequatur rem nostrum omnis! Architecto.
+											</p>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="li_wrap">
+										<div class="date">
+											2020 - present
+										</div>
+										<div class="info">
+											<p class="info_title">
+												Secondary
+											</p>
+											<p class="info_com">
+												London Central Secondary School
+											</p>
+											<p class="info_cont">
+												Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga voluptatibus consequatur rem nostrum omnis! Architecto.
+											</p>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 </body>
 </html>
